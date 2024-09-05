@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #444;
+            background: linear-gradient(135deg, #f4f4f4, #d9e2f1); /* Gradient background */
+        }
+
+        header {
+            background:#138d75 ;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700; /* Gold color on hover */
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center-align text within sections */
+        }
+
+        #about {
+            background-color: #e0f7fa; /* Light cyan */
+        }
+
+        #projects {
+            background-color: #fce4ec; /* Light pink */
+        }
+
+        #contact {
+            background-color: #e8f5e9; /* Light green */
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 4px solid #e59866 ; /* Blue border for profile picture */
+        }
+
+        .education, .certifications, .internships {
+            margin-top: 20px;
+        }
+
+        .education div, .project, .internship {
+            background: #f8c471;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+
+        .certifications div {
+            background: #82e0aa;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+
+        .education div:hover, .project:hover, .internship:hover {
+            background: #e3f2fd; /* Light blue on hover */
+        }
+
+        .certifications div:hover {
+            background: #82e0aa;
+        }
+
+        .education h2, .certifications h2, .internships h2 {
+            margin-bottom: 20px; /* Space between heading and content */
+        }
+
+        .certifications {
+            margin-top: 40px; /* Space between education and certifications */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center form elements */
+        }
+
+        form label {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%; /* Make input and textarea full-width */
+            max-width: 500px; /* Limit width */
+        }
+
+        form button {
+            padding: 10px;
+            background:#138d75 ; /* Bright blue */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        form button:hover {
+            background: #1abc9c; /* Darker blue on hover */
+        }
+
+        footer {
+            background: #a9dfbf;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: relative; /* Changed to relative for better layout */
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .education, .certifications, .internships {
+                grid-template-columns: 1fr; /* Stack columns on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="profile">
+            <img src="image1.jpg" alt="Profile Picture">
+            <p>Hello! I'm Tovvuru Gowtham, a web developer with a passion for creating beautiful and functional websites and specialized in Java programming.</p>
+        </div>
+    
+        <div class="education">
+            <h2>Education</h2>
+            <div>
+                <h3>Bachelor of Technology (B.Tech)</h3>
+                <p><strong>University:</strong> NBKRIST<br>
+                   <strong>Year:</strong> 2022-2026</p>
+            </div>
+            <div>
+                <h3>Intermediate</h3>
+                <p><strong>Institution:</strong> SGM Krishna Murthy Junior College<br>
+                   <strong>Year:</strong> 2020-2022</p>
+            </div>
+          
+            <div>
+                <h3>SSC</h3>
+                <p><strong>School:</strong> Mythilee English Medium High School<br>
+                   <strong>Year:</strong> 2019-2020</p>
+            </div>
+          
+        </div>
+        
+        <div class="certifications">
+            <h2>Certifications</h2>
+            <div>
+                <h3>NPTEL certificate</h3>
+                <p>Privacy and security in online social media</p>
+            </div>
+            <div>
+                <h3>TCS Ion digital young professional</h3>
+                <p>Foundations of artificial intelligence</p>
+            </div>
+        </div>
+
+        <div class="internships">
+            <h2>Internships</h2>
+            <div class="internship">
+                <h3> Java programming Intern</h3>
+                <p><strong>Company:</strong> Codetech IT solutions<br>
+                   <strong>Duration:</strong> August 2023 - September 2023</p>
+            
+            </div>
+        
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project One: Portfolio Website</h3>
+            <p>This is a personal portfolio website to showcase my projects and skills. Built with HTML, CSS, and JavaScript, it features a responsive design and smooth navigation.</p>
+        </div>
+        <div class="project">
+            <h3>Project Two: E-commerce Platform</h3>
+            <p>Developed a full-stack e-commerce platform using React for the front end and Node.js for the backend. Implemented features like user authentication, product management, and payment processing.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me via email or phone:</p>
+        <p>Email: <a href="tovvururoyal27@gmail.com">tovvururoyal27@gmail.com</a></p>
+        <p>Phone: <a href="8332021567">8332021567</a></p>
+        <form id="contact
+       
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2024 Tovvuru Gowtham</p>
+        </footer>
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault(); 
+        
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+        
+            
+                console.log('Name:', name);
+                console.log('Email:', email);
+                console.log('Message:', message);
+        
+               
+            });
+        </script>
+        
